@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/styles/input.css">
+</head>
+<body class="bg-dark text-light font-inter">
+    
+    <!-- Encabezado -->
+    <header class="bg-gradient-main p-4 flex justify-between items-center flex-wrap">
+        <div class="flex items-center space-x-3">
+            <img src="./src/images/logo dm.jpg" alt="Logo" class="h-10 w-10">
+            <h1 class="text-xl font-bold">Mi Portafolio</h1>
+        </div>
+        <nav class="hidden md:block w-full md:w-auto mt-4 md:mt-0">
+            <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 text-center">
+                <li><a href="#inicio" class="hover:text-highlight block">Inicio</a></li>
+                <li><a href="#habilidades" class="hover:text-highlight block">Habilidades</a></li>
+                <li><a href="proyectos.html" class="hover:text-highlight block">Proyectos</a></li>
+                <li><a href="#contacto" class="hover:text-highlight block">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Sección Principal (Hero) -->
+    <section id="inicio" class="text-center py-20 px-4 flex flex-col md:flex-row items-center justify-center min-h-screen">
+        <div class="md:w-1/2 text-center md:text-left">
+            <h2 class="text-4xl font-bold text-highlight">Hola, soy Diana Mestanza</h2>
+            <p class="text-xl text-softGray max-w-md">Desarrollador Frond End.</p>
+        </div>
+        <div class="md:w-1/2 flex justify-center mt-6 md:mt-0">
+            <img src="./src/images/foto.jpg"  class="w-64 md:w-80 rounded-lg shadow-lg">
+        </div>
+    </section>
+    
+    <!-- Sección "Quién soy" -->
+    <section id="quien-soy" class="py-20 text-center px-4 flex flex-col items-center">
+        <h2 class="text-3xl font-bold text-neonGreen">¿Quién soy?</h2>
+        <p class="max-w-2xl mx-auto text-softGray">Soy Desarrolladora Front - End, soy estudiante del curso con conocimientos aptos, te invito a poder indagar esta pagina donde te permitira conocerme mas y saber mas de mis conocimientos.</p>
+    </section>
+    
+    <!-- Sección de Habilidades -->
+    <section id="habilidades" class="py-20 text-center px-4">
+        <h2 class="text-3xl font-bold text-highlight">Habilidades</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 max-w-4xl mx-auto">
+            <div class="p-4 bg-deepBlue rounded-lg text-light flex flex-col items-center">
+                <img src="./src/icons/html-5.png"  class="w-12 h-12 mb-2">
+                <span>HTML</span>
+            </div>
+            <div class="p-4 bg-deepBlue rounded-lg text-light flex flex-col items-center">
+                <img src="./src/icons/css-3.png" class="w-12 h-12 mb-2">
+                <span>CSS</span>
+            </div>
+            <div class="p-4 bg-deepBlue rounded-lg text-light flex flex-col items-center">
+                <img src="./src/icons/java.png"  class="w-12 h-12 mb-2">
+                <span>JavaScript</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="py-20 text-center px-4 flex flex-col items-center">
+        <h2 class="text-3xl font-bold text-neonGreen">Proyectos</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 max-w-4xl mx-auto">
+
+            <div class="p-4 bg-deepBlue rounded-lg text-light flex flex-col items-center shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 duration-300">
+                <img src="./src/images/paginasinfo.png"  class="w-full h-full object-cover rounded mb-2 hover:opacity-80 transition-opacity">
+                <h3 class="text-xl font-bold mt-2">Paginas Informativas</h3>
+                
+            </div>
+
+            <div class="p-4 bg-deepBlue rounded-lg text-light flex flex-col items-center shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 duration-300">
+                <img src="./src/images/formulario.png"  class="w-full h-full object-cover rounded mb-2 hover:opacity-80 transition-opacity">
+                <h3 class="text-xl font-bold mt-2">Formularios</h3>
+                
+            </div>
+
+            <div class="p-4 bg-deepBlue rounded-lg text-light flex flex-col items-center shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 duration-300">
+                <img src="./src/images/buqueda.png"  class="w-full h-full object-cover rounded mb-2 hover:opacity-80 transition-opacity">
+                <h3 class="text-xl font-bold mt-2">Buscador</h3>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Formulario de Contacto -->
+    <section id="contacto" class="py-20 text-center px-4 flex flex-col items-center">
+        <h2 class="text-3xl font-bold text-highlight">Contacto</h2>
+        <form class="mt-6 max-w-md w-full">
+            <input type="text" placeholder="Nombre" class="w-full p-2 mb-4 rounded bg-deepBlue text-light">
+            <input type="email" placeholder="Correo" class="w-full p-2 mb-4 rounded bg-deepBlue text-light">
+            <textarea placeholder="Mensaje" class="w-full p-2 mb-4 rounded bg-deepBlue text-light"></textarea>
+            <button class="bg-highlight text-black p-2 rounded font-bold w-full">Enviar</button>
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-gradient-main">
+        <p class="text-softGray">Diana Mestanza Diaz</p>
+    </footer>
+    <script src="proyectos.js"></script>
+</body>
+</html>
