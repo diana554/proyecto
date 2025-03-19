@@ -13,23 +13,7 @@
         <div class="flex items-center gap-2">
             <img src="./src/images/logo dm.jpg" alt="Logo" class="h-10 w-10">
             <h1 class="text-xl font-bold">Mi Portafolio</h1>
-        </div>
-    
-        <!-- Icono de menú móvil -->
-        <button class="md:hidden block text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </button>
-    
-        <nav class="hidden md:block">
-            <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 text-center">
-                <li><a href="#inicio" class="block">Inicio</a></li>
-                <li><a href="#habilidades" class="block">Habilidades</a></li>
-                <li><a href="proyectos.html" class="block">Proyectos</a></li>
-                <li><a href="#contacto" class="block">Contacto</a></li>
-            </ul>
-        </nav>
+        </div>        
     </header>
     
     <!-- Sección Principal (Hero) -->
@@ -50,7 +34,7 @@
     </section>
     
     <!-- Sección de Habilidades -->
-    <section id="habilidades" class="py-20 text-center px-4">
+    <section id="habilidades-contenedor" class="py-20 text-center px-4">
         <h2 class="text-3xl font-bold text-highlight">Habilidades</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 max-w-4xl mx-auto">
             <div class="p-4 bg-deepBlue rounded-lg text-light flex flex-col items-center">
@@ -81,7 +65,7 @@
                 <h3 class="text-xl font-bold mt-2">Formularios</h3>
             </div>
             <div class="p-4 bg-deepBlue rounded-lg text-light flex flex-col items-center shadow-lg">
-                <img src="./src/images/buqueda.png"  class="w-full h-full object-cover rounded mb-2">
+                <img src="./src/images/busqueda.png"  class="w-full h-full object-cover rounded mb-2">
                 <h3 class="text-xl font-bold mt-2">Buscador</h3>
             </div>
         </div>
@@ -101,5 +85,6 @@
     <footer class="text-center py-4 bg-gradient-main">
         <p class="text-softGray">Diana Mestanza Diaz</p>
     </footer>
+    <script src="./src/script/index.js"></script>
 </body>
 </html>
