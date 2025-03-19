@@ -1,3 +1,4 @@
+@import "tailwindcss";
 :root {
     --dark: #0D1117;
     --light: #FFFFFF;
@@ -18,3 +19,4 @@
 .text-neonGreen { color: var(--neonGreen); }
 .text-softGray { color: var(--softGray); }
 .bg-gradient-main { background: var(--gradient-main); }
+
